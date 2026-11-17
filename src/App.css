@@ -1,0 +1,161 @@
+/* src/App.css：內容和原本的 style.css 完全相同 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  background-color: #f6f1eb;
+  color: #3b2f2a;
+  line-height: 1.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+/* 頁首 */
+.header {
+  background-color: #4a3324;
+  color: #ffffff;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #e6d5c3;
+}
+
+/* 導覽列 */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 14px;
+  background-color: #6f4e37;
+  position: sticky;
+  top: 0;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #f3c98b;
+}
+
+/* 各區塊共用 */
+.section {
+  padding: 40px 32px;
+  border-bottom: 1px solid #eee4da;
+}
+
+.section h2 {
+  margin-bottom: 16px;
+  padding-left: 12px;
+  border-left: 5px solid #c8874a;
+}
+
+.section p {
+  margin-bottom: 10px;
+}
+
+/* 主題介紹 */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.intro img {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+/* 沖煮步驟 */
+.steps {
+  padding-left: 24px;
+}
+
+.steps li {
+  margin-bottom: 10px;
+}
+
+.tip {
+  background-color: #fbf3e8;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+/* 器材卡片 */
+.tool-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.tool-card {
+  background-color: #f6f1eb;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.tool-card h3 {
+  margin-bottom: 6px;
+}
+
+/* 訂閱表單 */
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subscribe-form input {
+  padding: 8px;
+  border: 1px solid #ccb8a4;
+  border-radius: 6px;
+  width: 260px;
+}
+
+.subscribe-form button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #c8874a;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #a96d36;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px dashed #ccb8a4;
+  margin: 20px 0;
+}
+
+/* 頁尾 */
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.85rem;
+  color: #8a7a6e;
+}
